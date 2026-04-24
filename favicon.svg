@@ -1,11 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="8" fill="url(#g)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#60A5FA"/>
-      <stop offset="1" stop-color="#3B82F6"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
     </linearGradient>
   </defs>
-  <path d="M16 22V12M16 22L12 18M16 22L20 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M9 21C9 21 10 23 16 23C22 23 23 21 23 21" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Green rounded square background -->
+  <rect width="256" height="256" rx="48" fill="url(#bg)"/>
+  <!-- Three stacked file layers to show "multiple files" -->
+  <!-- Top layer (faded) -->
+  <rect x="65" y="58" width="126" height="42" rx="8" fill="white" opacity="0.3"/>
+  <!-- Middle layer (medium) -->
+  <rect x="57" y="75" width="142" height="42" rx="8" fill="white" opacity="0.5"/>
+  <!-- Bottom layer (solid, like active download) -->
+  <rect x="49" y="92" width="158" height="42" rx="8" fill="white" opacity="0.95"/>
+  <!-- Down arrow on bottom layer (green) -->
+  <rect x="116" y="97" width="26" height="34" rx="5" fill="#10b981"/>
+  <polygon points="129,142 104,116 154,116" fill="#10b981"/>
+  <!-- Checkmark at bottom right -->
+  <polyline points="165,200 180,215 210,180" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/>
 </svg>
